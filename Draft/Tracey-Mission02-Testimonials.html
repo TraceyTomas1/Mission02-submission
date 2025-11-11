@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tracey-Mission02</title>
+    <link rel="stylesheet" href="Tracey-Mission02-Testimonials.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="Tracey-Mission01.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="Services.html">Services</a>
+      <a href="Tracey-Mission02-Testimonials.html">Testimonials</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+
+    <svg width="100%" height="2">
+      <line x1="0%" y1="50%" x2="100%" y2="50%" class="animated-dashed-line" />
+    </svg>
+
+    <!-- GALLERY CONTAINER -->
+    <div class="gallery-container">
+      <h1>Testimonials</h1>
+      <div class="selected-image-container">
+        <button class="arrow" id="left-arrow">&lt;</button>
+        <!-- &lt = < -->
+        <img
+          id="selected-image"
+          src="./images/suit.webp"
+          alt="selected-image"
+        />
+        <button class="arrow" id="right-arrow">&gt;</button>
+        <!-- &gt = > -->
+      </div>
+      <p id="image-name"></p>
+
+      <!-- THUMBNAIL CONTAINER -->
+      <div class="thumbnail-container">
+        <img class="thumbnail" src="images/suit.webp" alt="Customer A" />
+        <img class="thumbnail" src="images/cutting.jpg" alt="Customer B" />
+        <img class="thumbnail" src="images/measuring.jpg" alt="Customer C" />
+        <img class="thumbnail" src="images/mannequin.jpg" alt="Customer D" />
+        <img class="thumbnail" src="images/sewing.jpg" alt="Customer E" />
+      </div>
+    </div>
+  </body>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer">
+      <i class="fa-solid fa-copyright"> </i> 2025 by Tracey Tomas. All rights
+      reserved
+    </p>
+  </footer>
+</html>

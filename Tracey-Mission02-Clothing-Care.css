@@ -1,0 +1,214 @@
+* {
+  background-color: rgb(243, 235, 199);
+  font-family: "Inter";
+  font-size: clamp(0.45rem, 2.5vw, 2rem);
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  background-color: rgb(243, 235, 199);
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0px;
+  z-index: 99;
+}
+
+.navbar a {
+  font-family: "Inter";
+  font-size: clamp(0.5rem, 1.5vw, 1rem);
+  font-weight: 700;
+  color: rgb(49, 49, 49);
+  padding: 20px 20px;
+  text-decoration: none;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.navbar a:hover {
+  background-color: white;
+  color: rgb(49, 49, 49);
+}
+
+/* Heading */
+h1 {
+  color: rgb(49, 49, 49);
+  /* clamp(min, preferred, max) */
+  font-size: clamp(1rem, 8vw, 5rem);
+  margin: 1rem 5rem;
+  text-align: center;
+  /* border: 2px dashed red; */
+}
+
+/* Dashed Line Animation */
+.animated-dashed-line {
+  stroke: rgb(49, 49, 49);
+  stroke-width: 5%;
+  stroke-dasharray: 15 5;
+  stroke-dashoffset: 0;
+  animation: dash-animation 2s linear infinite;
+}
+
+@keyframes dash-animation {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+
+/* Paragraph */
+.blurb {
+  color: rgb(49, 49, 49);
+  font-size: clamp(0.25rem, 2vw, 1.25rem);
+  text-align: left;
+  margin: 2rem 5rem;
+  /* border: 2px dashed red; */
+}
+
+/* SELECTED IMAGE CONTAINER */
+.selected-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 5rem;
+  /* width: 30rem;*/
+  /* height: 20rem; */
+  /* border: 2px dashed rgb(68, 0, 255); */
+}
+
+#selected-image {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 5px;
+  /* border: 2px dashed red; */
+}
+
+/* Image Description */
+#image-description {
+  font-family: "Inter";
+  font-size: clamp(0.25rem, 2vw, 1.25rem);
+  text-align: center;
+  margin: -1rem 5rem;
+  color: rgb(49, 49, 49);
+  border: 2px dashed rgb(255, 0, 200);
+}
+
+/* Arrows */
+.arrow {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  font-weight: 700;
+  color: rgb(49, 49, 49);
+}
+
+.arrow:hover {
+  background-color: white;
+  color: rgb(49, 49, 49);
+}
+
+/* hrefs */
+a {
+  color: rgb(49, 49, 49);
+  text-decoration: none;
+}
+
+/* THUMBNAIL */
+
+.thumbnail-container {
+  display: flex;
+  justify-content: center;
+  align-content: stretch;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 2rem 5rem;
+  border-radius: 5px;
+  /* border: 2px dashed rgb(255, 0, 200); */
+}
+
+.thumbnail {
+  position: relative;
+  display: block;
+  width: 7.5rem;
+  height: 6rem;
+  border-radius: 5px;
+  /* border: 2px dashed rgb(255, 0, 200); */
+}
+
+.thumbnail img {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.thumb {
+  position: relative;
+  display: block;
+  width: 7.5rem;
+  height: 6rem;
+  border-radius: 5px;
+}
+
+.thumb img {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/* OVERLAY */
+.thumbnail .overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: Inter;
+  font-size: 0.5rem;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.thumbnail:hover .overlay-text {
+  opacity: 1;
+  border-radius: 5px;
+}
+
+/* FOOTER */
+i {
+  font-size: clamp(0.5rem, 1.5vw, 1rem);
+}
+
+p.footer {
+  font-family: inherit;
+  font-size: clamp(0.5rem, 1.5vw, 1rem);
+  font-weight: 700;
+  color: rgb(49, 49, 49);
+  bottom: 0;
+  text-align: center;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  min-height: 20px;
+  /* bottom: 0; */
+  background-color: rgb(243, 235, 199);
+}

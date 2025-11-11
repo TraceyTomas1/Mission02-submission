@@ -1,0 +1,149 @@
+* {
+  background-color: rgb(243, 235, 199);
+  font-family: "Inter";
+  font-size: clamp(0.45rem, 2.5vw, 2rem);
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  background-color: rgb(243, 235, 199);
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0px;
+  z-index: 99;
+}
+
+.navbar a {
+  font-family: "Inter";
+  font-size: clamp(0.5rem, 1.5vw, 1rem);
+  font-weight: 700;
+  color: rgb(49, 49, 49);
+  padding: 20px 20px;
+  text-decoration: none;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.navbar a:hover {
+  background-color: white;
+  color: rgb(49, 49, 49);
+}
+
+/* Dashed Line Animation */
+.animated-dashed-line {
+  stroke: rgb(49, 49, 49);
+  stroke-width: 5%;
+  stroke-dasharray: 15 5;
+  stroke-dashoffset: 0;
+  animation: dash-animation 2s linear infinite;
+}
+
+@keyframes dash-animation {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+
+h1 {
+  color: rgb(49, 49, 49);
+  /* clamp(min, preferred, max) */
+  font-size: clamp(1.8rem, 10vw, 8rem);
+  text-align: center;
+}
+
+.selected-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.arrow {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  font-weight: 700;
+  color: rgb(49, 49, 49);
+}
+
+.arrow:hover {
+  background-color: white;
+  color: rgb(49, 49, 49);
+}
+
+#selected-image {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+}
+
+#selected-image:hover {
+  background-color: white;
+  opacity: 0.4;
+}
+
+/*  */
+#image-name {
+  /* margin-top: 10px; */
+  font-family: "Inter";
+  font-size: clamp(0.5rem, 1.5vw, 1rem);
+  font-weight: 700;
+  text-align: center;
+  color: rgb(49, 49, 49);
+}
+
+a {
+  color: rgb(49, 49, 49);
+  text-decoration: none;
+}
+/* THUMBNAILS */
+.thumbnail-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.thumbnail {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border: 2px solid rgb(243, 235, 199);
+  object-fit: cover;
+}
+
+.thumbnail:hover {
+  background-color: white;
+  opacity: 0.4;
+}
+
+/* footer */
+i {
+  font-size: clamp(0.5rem, 1.5vw, 1rem);
+}
+
+p.footer {
+  font-family: inherit;
+  font-size: clamp(0.5rem, 1.5vw, 1rem);
+  font-weight: 700;
+  color: rgb(49, 49, 49);
+  text-align: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 50px;
+  background-color: rgb(243, 235, 199);
+  text-align: center;
+}

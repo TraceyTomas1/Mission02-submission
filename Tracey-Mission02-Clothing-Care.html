@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tracey-Mission02</title>
+    <link rel="stylesheet" href="Tracey-Mission02-Clothing-Care.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script src="Tracey-Mission02-script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="Tracey-Mission01.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="Services.html">Services</a>
+      <a href="Tracey-Mission02-Clothing-Care.html">Clothing Care</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+
+    
+    <!-- GALLERY CONTAINER -->
+    <div class="gallery-container">
+    
+      <h1>Clothing Care</h1>
+
+      <svg width="100%" height="2">
+          <line x1="0%" y1="50%" x2="100%" y2="50%" class="animated-dashed-line" />
+      </svg>
+
+      <p class="blurb">Caring for clothing can be confusing, from cozy knits to structured wovens, each require unique maintenence. Avoid damage like shrinking and stretching by learning the essential care tips that extend the life of your favourite garments. Click through the gallery below to see how to extend the life of your garments!</p>
+      
+      <div class="selected-image-container">
+
+        <!-- unicode &lt = < -->
+        <button class="arrow" id="left-arrow">&lt;</button>
+
+        <img
+          id="selected-image"
+          src="./images/clothingcare.png"
+          alt="selected-image"
+        />
+
+        <!-- unicode &gt = > -->
+        <button class="arrow" id="right-arrow">&gt;</button>
+
+      </div>
+      <!-- Image Description  -->
+      <p id="image-description"></p>
+
+    <!-- THUMBNAIL CONTAINER -->
+    <div class="thumbnail-container">
+
+        <div class="thumbnail">
+          <img class="thumb" src="images/care-labels.webp" alt="Care Labels" />
+          <div class="overlay-text">CARE LABELS</div>
+        </div>
+
+        <div class="thumbnail">
+          <img class="thumb" src="images/woolens.jpg" alt="Woolens" />
+          <div class="overlay-text">WOOLENS</div>
+        </div>
+
+        <div class="thumbnail">
+          <img class="thumb" src="images/woven.webp" alt="Wovens" />
+          <div class="overlay-text">WOVENS</div>
+        </div>
+
+        <div class="thumbnail">
+          <img class="thumb" src="images/outerwear.webp" alt="Outerwear" />
+          <div class="overlay-text">OUTERWEAR</div>
+        </div>
+        
+        <div class="thumbnail">
+          <img class="thumb" src="images/denim.jpg" alt="Denim" />
+          <div class="overlay-text">DENIM</div>
+        </div>
+
+    </div>
+  </body>
+ 
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer">
+      <i class="fa-solid fa-copyright"> </i> 2025 by Tracey Tomas. All rights
+      reserved
+    </p>
+  </footer>
+</html>
